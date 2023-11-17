@@ -1,1 +1,22 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
 
+.pokemon-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px;
+}
+
+#pokemon-select {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#get-pokemon img {
+    width: 150px;
+}
