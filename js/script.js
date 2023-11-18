@@ -1,4 +1,3 @@
-
 const pokemonSelect = document.getElementById("pokemon-select");
 const getPokemon = document.getElementById("get-pokemon");
 
@@ -16,7 +15,9 @@ let callPokemon = () => {
             getPokemon.innerHTML = '';
             const pokemonInfo = document.createElement('div');
 
-            pokemonInfo.innerHTML = `
+            pokemonInfo.innerHTML = 
+            
+            `
                 <img src="${data.sprites.front_default}" alt="${data.name}"/>
                 <p>Nombre: <span>${data.name}</span></p>
                 <p>Tipo: <span>${data.types.map(type => type.type.name).join(', ')}</span></p>
@@ -26,7 +27,7 @@ let callPokemon = () => {
 
             getPokemon.appendChild(pokemonInfo);
         })
-        .catch((error) => {
+        .catch(error => {
             console.error('Error:', error.message);
         });
 };
