@@ -1,58 +1,128 @@
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 40px;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
 }
 
-.pokemon-form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin: 40px 180px 40px 180px;
+header {
+  background-color: #f37021;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
 }
 
-#pokemon-select {
-    text-align: center;
-    font-weight: bold;
-    padding: 10px;
-    text-transform: uppercase;
-    border: #000 solid 1px;
-    border-radius: 25px;
-    background-color: #000;
-    color: #fff;
+.poke-logo {
+  width: 200px;
+
 }
 
-#pokemon-select option:nth-child(1){
-    background-color: rgb(126, 237, 126);
+#app {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  padding: 20px;
 }
 
-#pokemon-select option:nth-child(2){
-    background-color: rgb(255, 78, 78);
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-#pokemon-select option:nth-child(3){
-    background-color: rgb(78, 157, 255);
+.error-message {
+  color: #d32f2f;
+  font-weight: bold;
 }
 
-#get-pokemon {
-    text-transform: uppercase;
-    margin-top: 20px;
-    border: #000 solid 1px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 25px;
-    padding: 10px;
-    box-shadow: 0px 0px 0px #000;
+#searchInput {
 
-    transition: all .3s linear;
+  padding: 8px;
+  margin: 0 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
-#get-pokemon:hover {
-    box-shadow: 0px 5px 15px #000;
+#searchBtn, #prevBtn, #nextBtn, #resetBtn {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-#get-pokemon img {
-    width: 150px;
+#searchBtn {
+  background-color: #4caf50;
+  color: white;
+}
+
+#prevBtn, #nextBtn, #resetBtn {
+  background-color: #2196F3;
+  color: white;
+}
+
+#searchBtn:hover, #prevBtn:hover, #nextBtn:hover, #resetBtn:hover {
+  opacity: 0.8;
+}
+
+/* --- */
+
+.container {
+  padding: 50px;
+}
+
+.botones {
+  margin-bottom: 40px;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 65px;
+  border-radius: 10px;
+  
+  transition: all 0.1s linear;
+}
+
+.entry:hover {
+  -webkit-box-shadow: inset 0px 0px 35px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0px 0px 35px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+}
+
+.entry img {
+  width: 100px;
+}
+
+.entry p {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+}
+
+.tipos p {
+  font-size: 12px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 50px;
+}
+
+.tipos {
+  display: flex;
+  gap: 10px;
 }
